@@ -1,5 +1,21 @@
+
+:root{
+ --bkg: rgb(0, 15, 27)
+}
+
+*{
+  transition: 300ms all;
+}
+
+html{
+  background: var(--bkg);
+  color: whitesmoke;
+}
+
 body {
   margin: 0;
+  height: 100vh;
+  width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +26,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: var(--bkg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box{
+  width: 40%;
+  height: auto;
+  background: whitesmoke;
+  color: var(--bkg);
+  padding: 3%;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+#author{
+  font-size: larger;
+  font-weight: 600;
+  align-self: flex-end;
+}
+
+button{
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+
+#buttons{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+#buttons *{
+  background: var(--bkg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10%;
+  color: whitesmoke;
+}
+
+#tweet-quote{
+  height: 50px;
+  width: 50px;  
+}
+
+#new-quote{
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 400;
 }
